@@ -1,0 +1,15 @@
+classes:
+  - common
+  - my_component
+
+parameters:
+  target_name: "dev"
+  namespace: $(target_name)
+  docker:
+    port: 80
+  nginx:
+    port: 80
+    name: "localhost"
+    charset: "koi8-r"
+    location:
+      root: "/usr/share/nginx/html"

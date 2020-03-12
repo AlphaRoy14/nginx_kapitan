@@ -1,0 +1,15 @@
+classes:
+  - common
+  - my_component
+
+parameters:
+  target_name: "prod"
+  namespace: $(target_name)
+  docker:
+    port: 8080
+  nginx:
+    port: 80
+    name: "www.example.com"
+    charset: "koi8-r"
+    location:
+      root: "/usr/share/nginx/html"

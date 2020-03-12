@@ -1,0 +1,29 @@
+parameters:
+  nginx:
+    image: nginx:1:15.8
+
+  kapitan:
+
+    compile:
+      - output_path: manifests
+        input_type: jinja2
+        output_type: html
+        input_paths:
+          - templates/nginx.conf
+
+      - output_path: .
+        input_type: jinja2
+        input_paths:
+          - templates/scripts
+
+      - output_path: .
+        input_type: jinja2
+        input_paths:
+          - templates/docs
+
+      - output_path: manifests/html
+        input_type: jinja2
+        input_paths:
+          - templates/index.html
+          - templates/custom_404.html
+
