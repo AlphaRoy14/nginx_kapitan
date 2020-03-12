@@ -13,3 +13,4 @@ parameters:
     charset: "koi8-r"
     location:
       root: "/usr/share/nginx/html"
+    error_page: True
