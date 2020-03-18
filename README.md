@@ -39,8 +39,7 @@
     ├── index.html
     ├── nginx.conf
     └── scripts
-        ├── _run.sh.swp
         └── run.sh
 
-13 directories, 21 files
+13 directories, 20 files
 ```
